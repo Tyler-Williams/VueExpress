@@ -8,7 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav active ml-auto">
           <li class="nav-item-active" v-for="category in categories" :key="category._id">
-            <router-link tag="a" :to = "{name: 'category', params: {category: category.title}}" class="nav-link">{{ category.title }}</router-link>
+            <router-link tag="a" :to="{ name: 'category', params: { category: category.title }}" class="nav-link">{{ category.title }}</router-link>
           </li>
           <router-link tag="a" :to="{ name: 'checkout' }" class="nav-link">Cart(<span class="badge badge-light">{{ cart.length }}</span>)</router-link>
         </ul>

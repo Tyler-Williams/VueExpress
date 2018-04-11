@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Products from '../components/Products'
 import Product from '../components/Product'
 import Checkout from '../components/Checkout'
-import Category from '../components/Category.vue'
+import Category from '../components/Category'
 
 Vue.use(Router)
 
@@ -26,7 +26,7 @@ export default new Router({
       component: Checkout
     },
     {
-      path: '/category',
+      path: '/category/:category',
       name: 'category',
       component: Category
     }
